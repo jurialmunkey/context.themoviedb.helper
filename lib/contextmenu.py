@@ -13,14 +13,16 @@ def play_using():
             'tmdb_id': sys.listitem.getUniqueID('tmdb'),
             'imdb_id': sys.listitem.getUniqueID('imdb'),
             'query': sys.listitem.getVideoInfoTag().getTitle() or sys.listitem.getLabel(),
-            'year': sys.listitem.getVideoInfoTag().getYear()
+            'year': sys.listitem.getVideoInfoTag().getYear(),
+            'ignore_default': 'true'
         }
     elif dbtype == 'episode':
         params = {
             'play': 'tv',
             'query': sys.listitem.getVideoInfoTag().getTVShowTitle(),
             'season': sys.listitem.getVideoInfoTag().getSeason(),
-            'episode': sys.listitem.getVideoInfoTag().getEpisode()
+            'episode': sys.listitem.getVideoInfoTag().getEpisode(),
+            'ignore_default': 'true'
         }
 
     if not params:
