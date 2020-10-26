@@ -7,7 +7,7 @@
     <extension point="kodi.context.item">
         <menu id="kodi.core.main">
             <menu>
-            <label>TMDbHelper Options</label>
+                <label>TMDbHelper Options</label>
                 <item library="context-playusing.py">
                     <label>Select player</label>
                     <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)] + String.IsEmpty(ListItem.Property(tmdbhelper.context.playusing))</visible>
