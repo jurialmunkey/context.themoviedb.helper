@@ -51,6 +51,16 @@ def try_encode(string, encoding='utf-8'):
         return string
 
 
+def try_decode(string, encoding='utf-8', errors=None):
+    """helper to decode strings for PY 2 """
+    if sys.version_info.major == 3:
+        return string
+    try:
+        return string.decode(encoding, errors) if errors else string.decode(encoding)
+    except Exception:
+        return string
+
+
 def urlencode_params(*args, **kwargs):
     """ helper to assist with difference in urllib modules in PY2/3 """
     params = dict()

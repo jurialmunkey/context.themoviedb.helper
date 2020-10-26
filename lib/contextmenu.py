@@ -1,6 +1,6 @@
 import sys
 import xbmc
-from lib.parser import kodi_log, viewitems
+from lib.parser import kodi_log, viewitems, try_encode, try_decode
 
 
 def play_using():
@@ -32,8 +32,8 @@ def play_using():
     for k, v in viewitems(params):
         if not v:
             continue
-        path = '{},{}={}'.format(path, k, v)
+        path = u'{},{}={}'.format(path, k, try_decode(v))
     path = u'RunScript({})'.format(path)
 
-    xbmc.executebuiltin(path)
+    xbmc.executebuiltin(try_encode(try_decode(path)))
     kodi_log(['TMDbHelper.Context: Executed Play Using\n', path], 1)
