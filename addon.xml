@@ -6,10 +6,13 @@
     </requires>
     <extension point="kodi.context.item">
         <menu id="kodi.core.main">
-            <item library="context-playusing.py">
-                <label>Play using TMDbHelper</label>
-                <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)] + String.IsEmpty(ListItem.Property(tmdbhelper.context.playusing))</visible>
-            </item>
+            <menu>
+            <label>TMDbHelper Options</label>
+                <item library="context-playusing.py">
+                    <label>Select player</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)] + String.IsEmpty(ListItem.Property(tmdbhelper.context.playusing))</visible>
+                </item>
+            </menu>
         </menu>
     </extension>
     <extension point="xbmc.addon.metadata">
