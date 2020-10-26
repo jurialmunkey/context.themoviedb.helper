@@ -22,11 +22,11 @@ def kodi_log(value, level=0):
         if sys.version_info < (3, 0):
             logvalue = logvalue.encode('utf-8', 'ignore')
         if level == 1:
-            xbmc.log(logvalue, level=xbmc.LOGNOTICE)
+            xbmc.log(logvalue, level=xbmc.LOGINFO)
         else:
             xbmc.log(logvalue, level=xbmc.LOGDEBUG)
     except Exception as exc:
-        xbmc.log(u'Logging Error: {}'.format(exc), level=xbmc.LOGNOTICE)
+        xbmc.log(u'Logging Error: {}'.format(exc), level=xbmc.LOGINFO)
 
 
 def viewitems(obj, **kwargs):
