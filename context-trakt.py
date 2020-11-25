@@ -2,8 +2,8 @@
 # Module: default
 # Author: jurialmunkey
 # License: GPL v.3 https://www.gnu.org/copyleft/gpl.html
-from lib.context import sync_trakt
+from lib.context import run_context
 
 
 if __name__ == '__main__':
-    sync_trakt()
+    run_context('sync_trakt')
