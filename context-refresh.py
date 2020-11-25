@@ -6,4 +6,4 @@ from lib.context import run_context
 
 
 if __name__ == '__main__':
-    run_context('play_using')
+    run_context('refresh_details')
