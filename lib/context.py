@@ -45,6 +45,7 @@ ROUTE = {
             'query': lambda: sys.listitem.getVideoInfoTag().getTVShowTitle(),
             'season': lambda: sys.listitem.getVideoInfoTag().getSeason(),
             'episode': lambda: sys.listitem.getVideoInfoTag().getEpisode(),
+            'episode_year': lambda: sys.listitem.getVideoInfoTag().getYear(),
             'ignore_default': 'true'
         }
     },
