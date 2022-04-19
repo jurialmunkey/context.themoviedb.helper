@@ -1,6 +1,6 @@
 import sys
 import xbmc
-from lib.parser import viewitems, try_encode, try_decode
+from lib.plugin import viewitems, try_encode, try_decode
 
 
 BASIC_MOVIE = {
@@ -65,24 +65,9 @@ ROUTE = {
         'episode': BASIC_EPISODE
     },
     'manage_artwork': {
-        'movie': {
-            'ftv_type': 'movies',
-            'ftv_id': lambda: sys.listitem.getUniqueID('tmdb'),
-            'tmdb_type': 'movie',
-            'tmdb_id': lambda: sys.listitem.getUniqueID('tmdb'),
-            'imdb_id': lambda: sys.listitem.getUniqueID('imdb'),
-            'query': lambda: sys.listitem.getVideoInfoTag().getTitle() or sys.listitem.getLabel(),
-            'year': lambda: sys.listitem.getVideoInfoTag().getYear()
-        },
-        'tvshow': {
-            'ftv_type': 'tv',
-            'ftv_id': lambda: sys.listitem.getUniqueID('tvdb'),
-            'tmdb_type': 'tv',
-            'tmdb_id': lambda: sys.listitem.getUniqueID('tmdb'),
-            'imdb_id': lambda: sys.listitem.getUniqueID('imdb'),
-            'query': lambda: sys.listitem.getVideoInfoTag().getTitle() or sys.listitem.getLabel(),
-            'year': lambda: sys.listitem.getVideoInfoTag().getYear()
-        }
+        'movie': BASIC_MOVIE,
+        'tvshow': BASIC_TVSHOW,
+        'episode': BASIC_EPISODE
     }
 }
 
