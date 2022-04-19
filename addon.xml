@@ -2,7 +2,7 @@
 <addon id="context.themoviedb.helper" version="1.1.0" name="TMDbHelper - Additional Context Menu Items" provider-name="jurialmunkey">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
-        <import addon="plugin.video.themoviedb.helper" version="4.7.0" />
+        <import addon="plugin.video.themoviedb.helper" version="4.7.7" />
     </requires>
     <extension point="kodi.context.item">
         <menu id="kodi.core.main">
@@ -27,6 +27,10 @@
                 <item library="context.py" args="manage_artwork">
                     <label>$ADDON[plugin.video.themoviedb.helper 32222]</label>
                     <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)] + String.IsEmpty(ListItem.Property(tmdbhelper.context.artwork)) + String.IsEmpty(ListItem.Property(item.info))</visible>
+                </item>
+                <item library="context.py" args="add_to_library">
+                    <label>$ADDON[plugin.video.themoviedb.helper 32151]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)] + String.IsEmpty(ListItem.Property(tmdbhelper.context.addlibrary)) + String.IsEmpty(ListItem.Property(item.info))</visible>
                 </item>
             </menu>
         </menu>

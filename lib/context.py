@@ -68,6 +68,11 @@ ROUTE = {
         'movie': BASIC_MOVIE,
         'tvshow': BASIC_TVSHOW,
         'episode': BASIC_EPISODE
+    },
+    'add_to_library': {
+        'movie': BASIC_MOVIE,
+        'tvshow': BASIC_TVSHOW,
+        'episode': BASIC_EPISODE
     }
 }
 
