@@ -53,8 +53,9 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Additional context menu items for TMDbHelper</summary>
-        <description lang="en">Adds additional TMDbHelper context menu items
-        </description>
+        <summary lang="zh">TMDbHelper 额外右键菜单项</summary>
+        <description lang="en">Adds additional TMDbHelper context menu items</description>        
+        <description lang="zh">为 TMDbHelper 添补额外的右键菜单项</description>
         <platform>all</platform>
         <license>GPL-3.0-or-later</license>
         <website>https://github.com/jurialmunkey/plugin.video.themoviedb.helper</website>
