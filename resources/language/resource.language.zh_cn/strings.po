@@ -1,0 +1,47 @@
+# XBMC Media Center language file
+# Addon Name: TheMovieDb Helper
+# Addon id: plugin.video.themoviedb.helper
+# Addon Provider: jurialmunkey
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2026-01-15 17:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: wabisabi926\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: /addon.xml
+msgctxt "#32000"
+msgid "Manage TMDbHelper"
+msgstr "管理 TMDbHelper"
+
+#: /addon.xml
+msgctxt "#32001"
+msgid "Modify service"
+msgstr "修改服务配置"
+
+#: /addon.xml
+msgctxt "#32002"
+msgid "Trakt logout"
+msgstr "退出 Trakt 账号"
+
+#: /addon.xml
+msgctxt "#32003"
+msgid "Clear sync"
+msgstr "清除同步数据"
+
+#: /addon.xml
+msgctxt "#32004"
+msgid "Authenticate Trakt"
+msgstr "Trakt 授权验证"
+
+#: /addon.xml
+msgctxt "#32005"
+msgid "Modify artwork"
+msgstr "修改艺术图片"
