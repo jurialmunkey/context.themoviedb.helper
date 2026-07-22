@@ -19,7 +19,7 @@ msgstr ""
 #: /addon.xml
 msgctxt "#32000"
 msgid "Manage TMDbHelper"
-msgstr "TMDbHelper verwalten"
+msgstr "TMDb Helper verwalten"
 
 #: /addon.xml
 msgctxt "#32001"
@@ -44,4 +44,4 @@ msgstr "Trakt-Account authentifizieren"
 #: /addon.xml
 msgctxt "#32005"
 msgid "Modify artwork"
-msgstr "Artwork bearbeiten"
+msgstr "Artwork ändern"
